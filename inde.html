@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Font Awesome -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+	<!-- MDB-->
+	<link rel="stylesheet" href="./node_modules/mdb-ui-kit/css/mdb.min.css">
+	<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.css" rel="stylesheet" /> -->
+	<link rel="stylesheet" href="./css/main.css">
+	<title>Dashboard</title>
+</head>
+
+<body>
+	<!-- MDB Js-->
+	<div>
+		<div class="py-3 bg-danger">
+			<div class="container">
+				<span class="fs-3 text-white">Dashboard</span>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row mt-1 bg-secondary">
+				<div class="col-md-2 bg-warning">
+					<form class="p-2" id="form">
+
+						<div class="mb-3 ">
+							<label class="form-label text-black" for="form1">Enter name</label>
+							<input type="text" id="form1" class="form-control userName" required
+								placeholder="Enter username" />
+						</div>
+
+						<div class=" mb-3">
+							<label class="form-label text-black" for="form2">Reting</label>
+							<input type="number" id="form2" class="form-control userReting" required
+								placeholder="Enter reting" />
+						</div>
+
+						<button class="btn btn-success w-100">Submit</button>
+					</form>
+				</div>
+
+				<div class="col-md-7">
+					<table class="table table-bordered table-striped table-hover">
+						<thead>
+							<tr class="bg-info text-white">
+								<th>ID</th>
+								<th>userName</th>
+								<th>score</th>
+								<th>edit</th>
+								<th>delet</th>
+							</tr>
+						</thead>
+
+						<tbody>
+						</tbody>
+					</table>
+				</div>
+				<div class="col-md-3 bg-light shadow">
+					<h2 class="text-dark text-center">Bookmark</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="./js/plugin.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+
+</html>
