@@ -1,3 +1,18 @@
 body{
     background-color: rgb(3, 60, 73);
+    overflow-x: hidden;
 }
+
+.toltip{
+    position: absolute;
+    top: 10%;
+    right: 1%;
+    transform: translateX(200%);
+    transition: all 5s ease;
+}
+
+    
+
+/* .toltip h2{
+    background-color: chartreuse;
+} */

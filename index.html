@@ -19,6 +19,10 @@
 <body>
 	<!-- MDB Js-->
 	<div>
+
+		<div class="toltip">
+			<h2 class="btn">mufoqiyatli qo'shildi</h2>
+		</div>
 		<div class="py-3 bg-danger">
 			<div class="container">
 				<span class="fs-3 text-white">Dashboard</span>
@@ -31,14 +35,12 @@
 
 						<div class="mb-3 ">
 							<label class="form-label text-black" for="form1">Enter name</label>
-							<input type="text" id="form1" class="form-control userName" required
-								placeholder="Enter username" />
+							<input type="text" id="form1" class="form-control userName" placeholder="Enter username" />
 						</div>
 
 						<div class=" mb-3">
 							<label class="form-label text-black" for="form2">Reting</label>
-							<input type="number" id="form2" class="form-control userReting" required
-								placeholder="Enter reting" />
+							<input type="number" id="form2" class="form-control userReting" placeholder="Enter reting" />
 						</div>
 
 						<button class="btn btn-success w-100">Submit</button>
@@ -67,6 +69,37 @@
 			</div>
 		</div>
 	</div>
+
+<!-- Modal -->
+<div class="modal top fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-mdb-backdrop="true" data-mdb-keyboard="true">
+  <div class="modal-dialog  ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+				<div class="form-outline mb-3">
+					<input type="text" id="typeText" class="form-control" />
+					<label class="form-label" for="typeText">Text input</label>
+				</div>
+				<div class="form-outline">
+					<input type="number" id="typeNumber" class="form-control" />
+					<label class="form-label" for="typeNumber">Number input</label>
+				</div>
+				<button type="submit" class="btn btn-primary changesData" >Save changes</button>
+			</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+	<!-- MDB -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.js"></script>
 	<script src="./js/plugin.js"></script>
 	<script src="./js/main.js"></script>
 </body>
